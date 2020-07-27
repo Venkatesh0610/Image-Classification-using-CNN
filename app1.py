@@ -15,7 +15,7 @@ global graph
 graph=tf.compat.v1.get_default_graph()
 
 
-app=Flask(__name__)
+app1=Flask(__name__)
 model=load_model("flowers.h5")
 
 @app.route("/")
@@ -41,7 +41,7 @@ def upload():
         return result
     return None
 if __name__=="__main__":
-    app.run(debug=True)
+    app1.run(debug=True)
             
             
             
