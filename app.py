@@ -1,18 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jul 19 18:45:21 2020
-
-@author: Adminr
-"""
-
 import os
 import numpy as np
 from flask import Flask,request,render_template
 from keras.models import load_model
 from keras.preprocessing import image
 import tensorflow as tf
-global graph
-graph=tf.compat.v1.get_default_graph()
+#global graph
+#graph=tf.compat.v1.get_default_graph()
 
 
 app=Flask(__name__)
